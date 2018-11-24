@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NameCard</string>
+    <string name="changeBtn">Change !</string>
+
+
+    // JJ Information //
+    <string name="jj_nickname">JeJe</string>
+    <string name="jj_name">Kittitorn Rakpanyakeaw</string>
+    <string name="jj_address">88 Moo 6, Sub-District: San Sai, District: Mae Chan, Province : Chiang Rai</string>
+    <string name="jj_phone">0816033304</string>
+    <string name="jj_email">koonjj@gmail.com</string>
+    <string name="jj_line">twilighty7</string>
+
+    // Jane Information //
+    <string name="jane_nickname">Jane</string>
+    <string name="jane_name">Oraya Sridaoruang</string>
+    <string name="jane_address">15/1 Sripingmuang Rd. T.changklan, Muang, Province : Chiang Mai</string>
+    <string name="jane_phone">0946253238</string>
+    <string name="jane_email">orayasridowraung@gmail.com</string>
+    <string name="jane_line">janeoraya.</string>
+</resources>
