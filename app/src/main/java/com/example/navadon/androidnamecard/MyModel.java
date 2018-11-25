@@ -1,7 +1,9 @@
 package com.example.navadon.androidnamecard;
 
 import android.arch.lifecycle.ViewModel;
+import android.graphics.drawable.Drawable;
 import android.media.Image;
+import android.widget.Button;
 
 public class MyModel extends ViewModel {
 
@@ -53,29 +55,25 @@ public class MyModel extends ViewModel {
         this.line = line;
     }
 
-    public Image getAvatar() {
-        return avatar;
+
+    public Integer getImgSrc1() {
+        return imgSrc1;
     }
 
-    public void setAvatar(Image avatar) {
-        this.avatar = avatar;
+    public void setImgSrc1(int imgSrc1) {
+        this.imgSrc1 = imgSrc1;
     }
 
-    public Image getTopBar() {
-        return topBar;
+    public int getColorSrc1() {
+        return colorSrc1;
     }
 
-    public void setTopBar(Image topBar) {
-        this.topBar = topBar;
+    public void setColorSrc1(int colorSrc1) {
+        this.colorSrc1 = colorSrc1;
     }
 
-    public Image getBottomBar() {
-        return bottomBar;
-    }
-
-    public void setBottomBar(Image bottomBar) {
-        this.bottomBar = bottomBar;
-    }
+    private int imgSrc1;
+    private int colorSrc1;
 
     private String name;
     private String nickname;
@@ -84,20 +82,14 @@ public class MyModel extends ViewModel {
     private String phone;
     private String line;
 
-    private Image avatar;
-    private Image topBar;
-    private Image bottomBar;
 
     public MyModel() {
         this.name = "Name Text";
-        this.nickname = "Nickname Text";
+        this.nickname = "NNNN";
         this.address = "Address Text";
         this.email = "Email Text";
         this.phone = "Phone Text";
         this.line = "Line Text";
-        this.avatar = null;
-        this.topBar = null;
-        this.bottomBar = null;
     }
 
 

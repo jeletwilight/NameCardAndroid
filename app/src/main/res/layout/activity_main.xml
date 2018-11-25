@@ -25,7 +25,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/topHeight"
-                android:background="@color/bluejele" />
+                android:background="@{viewmodel.colorSrc1}" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -34,13 +34,14 @@
                 android:layout_alignLeft="@id/imageView3"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/marginPic"
-                app:srcCompat="@drawable/male" />
+                android:src="@{viewmodel.imgSrc1}"
+                 />
 
             <TextView
                 android:id="@+id/nickname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jj_nickname"
+                android:text="@{viewmodel.nickname}"
                 android:layout_alignRight="@id/imageView3"
                 style="@style/nickNameStyle" />
 
@@ -68,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/address"
                 style="@style/text2"
-                android:text="@string/jj_address" />
+                android:text="@{viewmodel.address}" />
 
         </LinearLayout>
 
@@ -86,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/email"
-                android:text="@string/jj_email"
+                android:text="@{viewmodel.email}"
                 style="@style/text2" />
 
         </LinearLayout>
@@ -106,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/phone"
-                android:text="@string/jj_phone"
+                android:text="@{viewmodel.phone}"
                 style="@style/text2" />
 
         </LinearLayout>
@@ -123,7 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/line"
-                android:text="@string/jj_line"
+                android:text="@{viewmodel.line}"
                 style="@style/text2" />
 
         </LinearLayout>
@@ -137,7 +138,7 @@
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/bluejele"/>
+                android:background="@{viewmodel.colorSrc1}"/>
 
             <Button
                 android:id="@+id/btn"
@@ -145,7 +146,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/changeBtn"
                 style="@style/btnStyle"
-                android:background="@color/white" />
+                android:background="@color/white"
+                android:onClick="changed"/>
 
         </RelativeLayout>
 
