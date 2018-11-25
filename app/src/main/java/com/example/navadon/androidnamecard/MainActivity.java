@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private MyModel viewModel;
 
-    private boolean change = false;
+    public boolean change = false;
     //private TextView outputName,outputNickName,outputAddress,outputPhone,outputEmail,outputLine;
     //private ImageView image,topBar,btmBar;
 
@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
         binding.setViewmodel(viewModel);
     }
 
-    private void changed(){
-        if(change == true) {
+    public void changed(){
+        if(this.change) {
             /*outputName.setText(getResources().getString(R.string.jane_name));
             outputNickName.setText(getResources().getString(R.string.jane_nickname));
             outputAddress.setText(getResources().getString(R.string.jane_address));
@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
             image.setImageResource(R.drawable.female);
             topBar.setBackgroundColor(getResources().getColor(R.color.pinkjane));
             btmBar.setBackgroundColor(getResources().getColor(R.color.pinkjane));*/
+            viewModel.setName(getString(R.string.jane_name));
+
         }else{
             /*outputNickName.setText(getResources().getString(R.string.jj_nickname));
             outputName.setText(getResources().getString(R.string.jj_name));
@@ -86,8 +88,9 @@ public class MainActivity extends AppCompatActivity {
             image.setImageResource(R.drawable.male);
             topBar.setBackgroundColor(getResources().getColor(R.color.bluejele));
             btmBar.setBackgroundColor(getResources().getColor(R.color.bluejele));*/
+            viewModel.setName(getString(R.string.jj_name));
         }
-        binding.tvDisplay.setText(viewModel.getString());
+        binding.name.setText(viewModel.getName());
     }
 
     // To hide Android soft keyboard
