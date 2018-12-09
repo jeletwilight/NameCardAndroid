@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "734420168450",
+    "firebase_url": "https://pakinpop-friendnamecard.firebaseio.com",
+    "project_id": "pakinpop-friendnamecard",
+    "storage_bucket": "pakinpop-friendnamecard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734420168450:android:d062e8a549525b40",
+        "android_client_info": {
+          "package_name": "com.example.navadon.androidnamecard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734420168450-6g5chgq7h8i1bq23mmm4p23uku1fq0dq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.navadon.androidnamecard",
+            "certificate_hash": "a1f9921464c026d8c22b0c4f299f22427a66898a"
+          }
+        },
+        {
+          "client_id": "734420168450-25duh4ut6uuhhqgr2ov581f0v4e0saqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPjgYUFSPqui95cvxWWIMPO6RhCYedfs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734420168450-25duh4ut6uuhhqgr2ov581f0v4e0saqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
