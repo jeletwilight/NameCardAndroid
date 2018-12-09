@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         dref = FirebaseDatabase.getInstance().getReference();
         initView();
-
     }
 
 
@@ -57,34 +56,48 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
                     String kuy = binding.EditName.getText().toString();
-                    String nickname = dataSnapshot.child(kuy).getKey();
-//                    String  h = dataSnapshot.child(kuy).child("Name").getValue(String.class);
-//                    String name = dataSnapshot.child(kuy).child("Name").getValue(String.class);
-//                    String name = dataSnapshot.child(kuy).child("Name").getValue(String.class);
-//                    String name = dataSnapshot.child(kuy).child("Name").getValue(String.class);
+                    if (dataSnapshot.child(kuy).exists()) {
+                        String nickname = dataSnapshot.child(kuy).getKey();
+                        String add = dataSnapshot.child(kuy).child("Address").getValue(String.class);
+                        String email = dataSnapshot.child(kuy).child("Email").getValue(String.class);
+                        String line = dataSnapshot.child(kuy).child("Line").getValue(String.class);
+                        String name = dataSnapshot.child(kuy).child("Name").getValue(String.class);
+                        String phone = dataSnapshot.child(kuy).child("Phone").getValue(String.class);
+                        int color = (int)((Math.random()*1000)%3) ;
+                        Log.d("kuy", "Color :"+ (int)((Math.random()*1000)%3));
+                        switch (color) {
+                            case 0 : viewModel.setColorSrc1(R.color.bluejele);
+                                     break;
+                            case 1 : viewModel.setColorSrc1(R.color.pinkjane);
+                                    break;
+                            case 2 : viewModel.setColorSrc1(R.color.black);
+                                    break;
+                        }
+                        viewModel.setImgSrc1(R.drawable.male);
+                        viewModel.setNickname(nickname);
+                        viewModel.setName(name);
+                        viewModel.setAddress(add);
+                        viewModel.setPhone(phone);
+                        viewModel.setEmail(email);
+                        viewModel.setLine(line);
 
-
-                    viewModel.setImgSrc1(R.drawable.male);
-                    viewModel.setColorSrc1(R.color.bluejele);
-                    viewModel.setNickname(nickname);
-                    viewModel.setName(getString(R.string.jj_name));
-                    viewModel.setAddress(getString(R.string.jj_address));
-                    viewModel.setPhone(getString(R.string.jj_phone));
-                    viewModel.setEmail(getString(R.string.jj_email));
-                    viewModel.setLine(getString(R.string.jj_line));
-
-                    binding.imageView.setImageResource(viewModel.getImgSrc1());
-                    binding.imageView3.setImageResource(viewModel.getColorSrc1());
-                    binding.imageView4.setImageResource(viewModel.getColorSrc1());
-                    binding.nickname.setText(viewModel.getNickname());
-                    binding.name.setText(viewModel.getName());
-                    binding.address.setText(viewModel.getAddress());
-                    binding.phone.setText(viewModel.getPhone());
-                    binding.email.setText(viewModel.getEmail());
-                    binding.line.setText(viewModel.getLine());
+                        binding.imageView.setImageResource(viewModel.getImgSrc1());
+                        binding.imageView3.setImageResource(viewModel.getColorSrc1());
+                        binding.imageView4.setImageResource(viewModel.getColorSrc1());
+                        binding.nickname.setText(viewModel.getNickname());
+                        binding.name.setText(viewModel.getName());
+                        binding.address.setText(viewModel.getAddress());
+                        binding.phone.setText(viewModel.getPhone());
+                        binding.email.setText(viewModel.getEmail());
+                        binding.line.setText(viewModel.getLine());
+                        }
+                        else{
+                        Toast.makeText(getApplicationContext(), "ืNOT EXIS",Toast.LENGTH_SHORT).show();
+                    }
                 }
-            }
 
+
+            }
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 databaseError.getMessage();
