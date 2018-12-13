@@ -3,13 +3,12 @@ package com.example.navadon.androidnamecard;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class OptionPage extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,4 +27,13 @@ public class OptionPage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void add(View v){
+        Intent intent = new Intent(this,AddNew.class);
+        startActivity(intent);
+    }
+
+    public void back(){
+        Intent intent = new Intent(this,Kuy.class);
+        startActivity(intent);
+    }
 }

@@ -656,7 +656,6 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
 id CTRL
-id Edit_name
 id FUNCTION
 id META
 id SHIFT
@@ -687,11 +686,11 @@ id alertTitle
 id all
 id always
 id async
+id back
 id barrier
 id beginning
 id blocking
 id bottom
-id btn
 id buttonPanel
 id center
 id center_horizontal
@@ -750,6 +749,7 @@ id name
 id name_search
 id namecard
 id never
+id nickName
 id nickname
 id none
 id normal
@@ -769,6 +769,7 @@ id radio
 id right
 id right_icon
 id right_side
+id save
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -853,6 +854,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_new
 layout activity_kuy
 layout activity_main
 layout activity_option_page

@@ -27,9 +27,10 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBindingImpl binding;
     DatabaseReference dref ;
-    //DatabaseReference kuyy;
+    
     private MyModel viewModel;
-
+    private int state = 0;
+    public String kuy;
     public boolean change = false;
 
     @Override
@@ -37,15 +38,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button start = findViewById(R.id.start);
+        dref = FirebaseDatabase.getInstance().getReference();
 
         Intent intent = getIntent();
-        String kuy = intent.getExtras().getString("search");
-
-        dref = FirebaseDatabase.getInstance().getReference();
+        kuy = intent.getExtras().getString("search");
         initView();
 
-
-
+        if(getIntent().getExtras() != null){
+            change();
+        }
     }
 
     public void onClick(View v) {
@@ -60,15 +61,13 @@ public class MainActivity extends AppCompatActivity {
         binding.setViewmodel(viewModel);
     }
 
-    public void changed(View view){
-
-
+    public void change(){
         Query userQuery = dref.child("Users");
         userQuery.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
-                   String kuy = binding.EditName.getText().toString();
+                   //String kuy = binding.EditName.getText().toString();
                     if (dataSnapshot.child(kuy).exists()) {
                         String nickname = dataSnapshot.child(kuy).getKey();
                         String add = dataSnapshot.child(kuy).child("Address").getValue(String.class);
@@ -104,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                         binding.line.setText(viewModel.getLine());
                         }
                         else{
-                        Toast.makeText(getApplicationContext(), "ืNOT EXIS",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "NOT EXIS",Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -116,8 +115,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
+    public void back(View v){
+        Intent intent = new Intent(this,OptionPage.class);
+        startActivity(intent);
+    }
 
 }

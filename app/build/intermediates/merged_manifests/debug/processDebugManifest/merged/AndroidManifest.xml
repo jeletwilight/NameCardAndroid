@@ -29,15 +29,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.navadon.androidnamecard.MainActivity" >
+        <activity android:name="com.example.navadon.androidnamecard.MainActivity" />
+        <activity android:name="com.example.navadon.androidnamecard.Kuy" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.navadon.androidnamecard.Kuy" />
         <activity android:name="com.example.navadon.androidnamecard.OptionPage" />
+        <activity android:name="com.example.navadon.androidnamecard.AddNew" />
 
         <provider
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"

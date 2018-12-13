@@ -980,6 +980,10 @@
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/6170e5ccb00b57a8af09174ecafb85fb/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/layout_activity_add_new.xml.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/layout/activity_add_new.xml"
+    },
+    {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/color-v21_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/color-v21/abc_btn_colored_borderless_text_material.xml"
     },
