@@ -84,6 +84,10 @@
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/layout_activity_option_page.xml.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/layout/activity_option_page.xml"
+    },
+    {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
@@ -762,6 +766,10 @@
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/layout_activity_kuy.xml.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/layout/activity_kuy.xml"
     },
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1458,6 +1466,10 @@
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/layout_activity_start_page.xml.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/layout/activity_start_page.xml"
     },
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",

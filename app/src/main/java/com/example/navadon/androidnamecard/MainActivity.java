@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,27 +21,37 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.Calendar;
+
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBindingImpl binding;
     DatabaseReference dref ;
-
-
+    //DatabaseReference kuyy;
     private MyModel viewModel;
 
     public boolean change = false;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button start = findViewById(R.id.start);
+
+        Intent intent = getIntent();
+        String kuy = intent.getExtras().getString("search");
+
         dref = FirebaseDatabase.getInstance().getReference();
         initView();
+
+
+
     }
 
+    public void onClick(View v) {
+        Intent intend = new Intent(MainActivity.this,Kuy.class);
+        startActivity(intend);
+    }
 
 
     private void initView(){
@@ -50,12 +61,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changed(View view){
+
+
         Query userQuery = dref.child("Users");
         userQuery.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
-                    String kuy = binding.EditName.getText().toString();
+                   String kuy = binding.EditName.getText().toString();
                     if (dataSnapshot.child(kuy).exists()) {
                         String nickname = dataSnapshot.child(kuy).getKey();
                         String add = dataSnapshot.child(kuy).child("Address").getValue(String.class);
@@ -64,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
                         String name = dataSnapshot.child(kuy).child("Name").getValue(String.class);
                         String phone = dataSnapshot.child(kuy).child("Phone").getValue(String.class);
                         int color = (int)((Math.random()*1000)%3) ;
-                        Log.d("kuy", "Color :"+ (int)((Math.random()*1000)%3));
                         switch (color) {
                             case 0 : viewModel.setColorSrc1(R.color.bluejele);
                                      break;
