@@ -3,6 +3,7 @@ package com.example.navadon.androidnamecard;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.graphics.Path;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference dref ;
     
     private MyModel viewModel;
-    private int state = 0;
     public String kuy;
     public boolean change = false;
 
@@ -103,10 +103,11 @@ public class MainActivity extends AppCompatActivity {
                         binding.line.setText(viewModel.getLine());
                         }
                         else{
-                        Toast.makeText(getApplicationContext(), "NOT EXIS",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(),OptionPage.class);
+                        startActivity(intent);
+                        Toast.makeText(getApplicationContext(), "NOT EXISTS",Toast.LENGTH_SHORT).show();
                     }
                 }
-
 
             }
             @Override
@@ -121,5 +122,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,OptionPage.class);
         startActivity(intent);
     }
+
+    public void Edit(View v){
+        Intent intent = new Intent(this,EditData.class);
+        intent.putExtra("nameEdit",kuy);
+        startActivity(intent);
+    }
+
 
 }

@@ -160,6 +160,13 @@
                         android:onClick="back"
                         android:text="BACK" />
 
+                    <Button
+                        android:id="@+id/edit_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="Edit"
+                        android:text="EDIT" />
+
                 </LinearLayout>
 
             </LinearLayout>

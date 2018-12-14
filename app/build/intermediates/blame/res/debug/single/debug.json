@@ -388,6 +388,10 @@
         "source": "/Users/oom/NameCardAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/layout_activity_edit_data.xml.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/layout/activity_edit_data.xml"
+    },
+    {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },

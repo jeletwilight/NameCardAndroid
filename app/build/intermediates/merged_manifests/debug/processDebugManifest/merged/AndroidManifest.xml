@@ -39,6 +39,7 @@
         </activity>
         <activity android:name="com.example.navadon.androidnamecard.OptionPage" />
         <activity android:name="com.example.navadon.androidnamecard.AddNew" />
+        <activity android:name="com.example.navadon.androidnamecard.EditData" />
 
         <provider
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"

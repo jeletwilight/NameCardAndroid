@@ -81,6 +81,4 @@ public class AddNew extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
 }
