@@ -4,10 +4,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.graphics.Path;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -36,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar ab = getSupportActionBar();
+        ab.hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         Button start = findViewById(R.id.start);
         dref = FirebaseDatabase.getInstance().getReference();
@@ -81,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                                      break;
                             case 1 : viewModel.setColorSrc1(R.color.pinkjane);
                                     break;
-                            case 2 : viewModel.setColorSrc1(R.color.black);
+                            case 2 : viewModel.setColorSrc1(R.color.purplepastel);
                                     break;
                         }
                         viewModel.setImgSrc1(R.drawable.male);
@@ -121,12 +127,14 @@ public class MainActivity extends AppCompatActivity {
     public void back(View v){
         Intent intent = new Intent(this,OptionPage.class);
         startActivity(intent);
+        finish();
     }
 
     public void Edit(View v){
         Intent intent = new Intent(this,EditData.class);
         intent.putExtra("nameEdit",kuy);
         startActivity(intent);
+        finish();
     }
 
 

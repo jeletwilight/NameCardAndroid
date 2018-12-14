@@ -120,12 +120,20 @@
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable_gradient_background.xml.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/drawable/gradient_background.xml"
+    },
+    {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -224,6 +232,10 @@
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png"
     },
@@ -298,6 +310,10 @@
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -632,6 +648,10 @@
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/6170e5ccb00b57a8af09174ecafb85fb/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
     },
@@ -706,6 +726,10 @@
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable_radius_corner_button.xml.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/drawable/radius_corner_button.xml"
     },
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -1208,6 +1232,10 @@
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable_edit_text_style.xml.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/drawable/edit_text_style.xml"
+    },
+    {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/color_abc_background_cache_hint_selector_material_dark.xml.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/color/abc_background_cache_hint_selector_material_dark.xml"
     },
@@ -1534,6 +1562,10 @@
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/Users/oom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6e579cf78c3883e054f6f6412de15c07/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oom/NameCardAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/oom/NameCardAndroid/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",

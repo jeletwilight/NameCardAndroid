@@ -1,10 +1,12 @@
 package com.example.navadon.androidnamecard;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -19,6 +21,10 @@ public class AddNew extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar ab = getSupportActionBar();
+        ab.hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_add_new);
 
         dref = FirebaseDatabase.getInstance().getReference();
@@ -73,12 +79,13 @@ public class AddNew extends AppCompatActivity {
         Intent intent = new Intent(this,MainActivity.class);
         intent.putExtra("search",nn);
         startActivity(intent);
-
+        finish();
     }
 
     public void back(View v){
         Intent intent = new Intent(this,OptionPage.class);
         startActivity(intent);
+        finish();
     }
 
 }

@@ -152,20 +152,27 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
+                    <Button
+                        android:id="@+id/edit_data"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/radius_corner_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:onClick="Edit"
+                        android:text="EDIT" />
 
                     <Button
                         android:id="@+id/start"
+                        android:background="@drawable/radius_corner_button"
+                        android:backgroundTint="@color/gray"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+
                         android:onClick="back"
                         android:text="BACK" />
 
-                    <Button
-                        android:id="@+id/edit_data"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="Edit"
-                        android:text="EDIT" />
+
 
                 </LinearLayout>
 

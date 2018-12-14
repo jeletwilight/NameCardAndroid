@@ -5,31 +5,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".EditData">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="center|top"
         android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:layout_weight="0.25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:gravity="center"
-                android:text="EDIT NAMECARD"
-                android:textSize="25sp" />
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="EDIT NAMECARD"
+            android:textSize="35dp" />
 
         <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_marginStart="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -38,17 +36,16 @@
                 android:layout_height="wrap_content">
 
                 <ImageButton
-                    android:id="@+id/imageButton"
+                    android:id="@+id/imageButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_compass" />
 
                 <EditText
                     android:id="@+id/name"
-                    style="@style/text2"
+                    style="@style/inputtext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:hint="NAME"
                     android:textSize="20sp" />
 
@@ -66,10 +63,9 @@
 
                 <EditText
                     android:id="@+id/nickName"
-                    style="@style/text2"
+                    style="@style/inputtext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:hint="NICK NAME"
                     android:textSize="20sp" />
 
@@ -88,10 +84,9 @@
 
                 <EditText
                     android:id="@+id/address"
-                    style="@style/text2"
+                    style="@style/inputtext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:hint="ADDRESS"
                     android:textSize="20sp" />
 
@@ -109,10 +104,9 @@
 
                 <EditText
                     android:id="@+id/email"
-                    style="@style/text2"
+                    style="@style/inputtext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:hint="EMAIL"
                     android:textSize="20sp" />
 
@@ -131,10 +125,9 @@
 
                 <EditText
                     android:id="@+id/phone"
-                    style="@style/text2"
+                    style="@style/inputtext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:hint="PHONE"
                     android:textSize="20sp" />
 
@@ -150,10 +143,9 @@
 
                 <EditText
                     android:id="@+id/line"
-                    style="@style/text2"
+                    style="@style/inputtext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:hint="LINE ID"
                     android:textSize="20sp" />
 
@@ -162,31 +154,33 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_weight="0.25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/save"
+                android:backgroundTint="#a12559"
+                android:background="@drawable/radius_corner_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="toSave"
+                android:layout_marginEnd="30dp"
+                android:textSize="20dp"
                 android:text="SAVE" />
 
             <Button
                 android:id="@+id/back"
+                android:backgroundTint="#a12559"
+                android:background="@drawable/radius_corner_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="toBack"
+                android:textSize="20dp"
                 android:text="BACK"
                 />
-            <Button
-                android:id="@+id/add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="toAdd"
-                android:text="Add" />
 
         </LinearLayout>
     </LinearLayout>

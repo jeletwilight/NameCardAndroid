@@ -11,5 +11,7 @@
     <color name="bluejele">#34a1f7</color>
     <color name="textblue">#111155</color>
     <color name="textred">#D81B60</color>
+    <color name="grayinput">#bcbcbc</color>
+    <color name="purplepastel">#caacef</color>
 
 </resources>
